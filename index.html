@@ -33,7 +33,6 @@ nav{
   font-family:'Great Vibes',cursive;font-size:1.5rem;color:var(--purple-light);
   text-shadow:0 0 18px rgba(168,85,247,0.5);white-space:nowrap;flex-shrink:0;
 }
-/* Hamburger button – shown on mobile */
 .nav-hamburger{
   display:none;flex-direction:column;gap:5px;background:none;border:none;
   cursor:pointer;padding:6px;flex-shrink:0;
@@ -42,7 +41,6 @@ nav{
 .nav-hamburger.open span:nth-child(1){transform:translateY(7px) rotate(45deg);}
 .nav-hamburger.open span:nth-child(2){opacity:0;}
 .nav-hamburger.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg);}
-/* Nav links – desktop inline, mobile dropdown */
 .nav-links{display:flex;gap:0.1rem;list-style:none;flex-wrap:wrap;}
 .nav-btn{
   background:none;border:none;color:rgba(255,255,255,0.6);
@@ -89,7 +87,6 @@ section{min-height:100vh;padding:80px 1.2rem 4rem;}
 }
 #hero-photo{
   position:absolute;inset:0;
-  /* ★ PUT YOUR PHOTO IN images/ folder and change the filename below */
   background-image:url('images/us.jpg');
   background-size:cover;background-position:center;z-index:0;
 }
@@ -203,19 +200,16 @@ section{min-height:100vh;padding:80px 1.2rem 4rem;}
   box-shadow:0 8px 40px rgba(80,20,140,0.5);
 }
 .env-body-inner{position:absolute;inset:0;}
-/* side triangles */
 .env-body-inner::before,.env-body-inner::after{
   content:'';position:absolute;bottom:0;width:0;height:0;
 }
 .env-body-inner::before{left:0;border-style:solid;border-width:0 0 55% 50%;border-color:transparent transparent rgba(40,15,75,0.9) transparent;}
 .env-body-inner::after{right:0;border-style:solid;border-width:0 50% 55% 0;border-color:transparent rgba(40,15,75,0.9) transparent transparent;}
-/* bottom triangle */
 .env-bottom{
   position:absolute;bottom:0;left:0;right:0;height:0;
   border-style:solid;border-width:0 50% 42%;
   border-color:transparent transparent rgba(35,12,65,0.95) transparent;
 }
-/* flap */
 .env-flap{
   position:absolute;top:0;left:0;right:0;
   transform-origin:top center;
@@ -224,7 +218,6 @@ section{min-height:100vh;padding:80px 1.2rem 4rem;}
 }
 .env-flap svg{width:100%;display:block;}
 .envelope.open .env-flap{transform:rotateX(180deg);}
-/* seal */
 .env-seal{
   position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);
   width:44px;height:44px;border-radius:50%;
@@ -235,7 +228,6 @@ section{min-height:100vh;padding:80px 1.2rem 4rem;}
   transition:opacity 0.3s,transform 0.3s;
 }
 .envelope.open .env-seal{opacity:0;transform:translate(-50%,-50%) scale(0);}
-/* letter paper — hidden inside envelope (not used for display anymore) */
 .env-letter{display:none;}
 .env-hint{text-align:center;font-size:0.68rem;letter-spacing:0.15em;text-transform:uppercase;color:rgba(192,132,252,0.4);margin-top:1rem;transition:opacity 0.3s;}
 .envelope.open .env-hint{opacity:0;}
@@ -322,43 +314,21 @@ section{min-height:100vh;padding:80px 1.2rem 4rem;}
 .ctrl-btn:hover{color:var(--purple-light);}
 .ctrl-play{width:50px;height:50px;border-radius:50%;background:linear-gradient(135deg,var(--purple-accent),var(--purple-glow));border:none;color:var(--white);font-size:1.1rem;cursor:pointer;display:flex;align-items:center;justify-content:center;box-shadow:0 0 20px rgba(168,85,247,0.4);transition:all 0.3s;}
 .ctrl-play:hover{box-shadow:0 0 35px rgba(168,85,247,0.6);transform:scale(1.05);}
-/* "No song loaded" notice */
 #song-error{font-size:0.78rem;color:rgba(192,132,252,0.5);margin-top:1rem;display:none;font-style:italic;}
 
 /* ══ STICKY NOTE WALL ══ */
 #book{background:linear-gradient(180deg,var(--purple-deep),#0e0320);}
-.sticky-add-form{max-width:700px;margin:0 auto 3rem;background:rgba(255,255,255,0.04);border:1px solid var(--glass-border);border-radius:18px;padding:1.5rem;backdrop-filter:blur(10px);}
-.sticky-add-inner{display:grid;grid-template-columns:140px 1fr;gap:1.5rem;align-items:start;}
-@media(max-width:600px){.sticky-add-inner{grid-template-columns:1fr;}}
-.sticky-form-preview{width:140px;height:140px;background:#f7d6ff;border-radius:4px 4px 4px 0;padding:1rem;box-shadow:4px 4px 14px rgba(0,0,0,0.4);font-family:'Montserrat',sans-serif;font-size:0.82rem;line-height:1.6;color:#3a1a5e;position:relative;word-break:break-word;transition:background 0.3s;display:flex;flex-direction:column;}
-@media(max-width:600px){.sticky-form-preview{width:100%;height:auto;min-height:100px;}}
-.sticky-form-preview::before{content:'';position:absolute;bottom:-11px;left:0;border-width:11px 13px 0 0;border-style:solid;border-color:rgba(0,0,0,0.2) transparent transparent transparent;}
-.sticky-preview-tag{font-size:0.58rem;letter-spacing:0.14em;text-transform:uppercase;opacity:0.5;margin-bottom:0.4rem;font-weight:600;}
-.sticky-preview-text{font-size:0.82rem;line-height:1.6;white-space:pre-wrap;}
-.sticky-preview-placeholder{font-size:0.75rem;color:rgba(90,40,120,0.45);font-style:italic;}
-.sticky-form-fields{display:flex;flex-direction:column;gap:0.75rem;}
-.sticky-input,.sticky-textarea{width:100%;padding:0.6rem 0.9rem;background:rgba(255,255,255,0.06);border:1px solid var(--glass-border);border-radius:8px;color:var(--white);font-family:'Montserrat',sans-serif;font-size:0.84rem;outline:none;transition:border-color 0.3s;}
-.sticky-input:focus,.sticky-textarea:focus{border-color:var(--purple-light);}
-.sticky-textarea{resize:vertical;min-height:80px;line-height:1.6;}
-.sticky-color-row{display:flex;align-items:center;gap:0.7rem;flex-wrap:wrap;}
-.sticky-color-label{font-size:0.65rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--purple-light);opacity:0.65;}
-.sticky-colors{display:flex;gap:0.45rem;flex-wrap:wrap;}
-.sticky-color-swatch{width:22px;height:22px;border-radius:50%;cursor:pointer;border:2px solid transparent;transition:all 0.22s;}
-.sticky-color-swatch:hover,.sticky-color-swatch.active{border-color:#fff;transform:scale(1.2);}
-.sticky-post-btn{padding:0.7rem 1.5rem;background:linear-gradient(135deg,var(--purple-accent),var(--purple-glow));border:none;border-radius:50px;color:#fff;font-family:'Montserrat',sans-serif;font-size:0.75rem;letter-spacing:0.14em;text-transform:uppercase;cursor:pointer;transition:all 0.3s;box-shadow:0 4px 18px rgba(168,85,247,0.35);}
-.sticky-post-btn:hover{transform:translateY(-2px);box-shadow:0 6px 28px rgba(168,85,247,0.55);}
-.sticky-wall{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(170px,42vw),1fr));gap:1.5rem;padding:0.5rem 0.3rem 2rem;min-height:180px;}
+.sticky-wall{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(200px,42vw),1fr));gap:1.5rem;padding:0.5rem 0.3rem 2rem;min-height:180px;}
 .sticky-note{position:relative;padding:1.2rem 1.2rem 1.8rem;border-radius:4px 4px 4px 0;box-shadow:4px 6px 18px rgba(0,0,0,0.42),inset -2px -2px 0 rgba(255,255,255,0.1);font-family:'Montserrat',sans-serif;color:#3a1a5e;word-break:break-word;transition:transform 0.3s,box-shadow 0.3s;animation:noteappear 0.4s cubic-bezier(0.175,0.885,0.32,1.275) both;}
-.sticky-note:nth-child(4n+1){transform:rotate(-1.5deg);}
-.sticky-note:nth-child(4n+2){transform:rotate(1.2deg);}
-.sticky-note:nth-child(4n+3){transform:rotate(-0.7deg);}
-.sticky-note:nth-child(4n){transform:rotate(1.8deg);}
+.sticky-note:nth-child(5n+1){transform:rotate(-1.5deg);}
+.sticky-note:nth-child(5n+2){transform:rotate(1.2deg);}
+.sticky-note:nth-child(5n+3){transform:rotate(-0.7deg);}
+.sticky-note:nth-child(5n+4){transform:rotate(1.8deg);}
+.sticky-note:nth-child(5n+5){transform:rotate(-1.1deg);}
 .sticky-note:hover{transform:rotate(0deg) scale(1.06) translateY(-8px)!important;box-shadow:6px 14px 32px rgba(0,0,0,0.5);z-index:10;}
 .sticky-note::before{content:'';position:absolute;bottom:-12px;left:0;border-width:12px 14px 0 0;border-style:solid;border-color:rgba(0,0,0,0.18) transparent transparent transparent;}
 .sticky-note-tag{font-size:0.58rem;letter-spacing:0.15em;text-transform:uppercase;opacity:0.45;margin-bottom:0.5rem;font-weight:600;}
 .sticky-note-text{font-size:0.84rem;line-height:1.65;white-space:pre-wrap;}
-.sticky-note-del{position:absolute;top:0.5rem;right:0.6rem;background:none;border:none;font-size:0.72rem;color:rgba(60,20,80,0.3);cursor:pointer;transition:color 0.2s;}
-.sticky-note-del:hover{color:rgba(180,30,30,0.6);}
 .sticky-empty{grid-column:1/-1;text-align:center;padding:3rem;font-family:'Cormorant Garamond',serif;font-size:1.15rem;font-style:italic;color:rgba(192,132,252,0.3);}
 @keyframes noteappear{from{opacity:0;transform:scale(0.6) rotate(-6deg);}to{opacity:1;}}
 
@@ -504,7 +474,6 @@ footer span{color:var(--purple-light);}
         <div class="letters-list" id="letters-list"></div>
       </div>
       <div>
-        <!-- Envelope display -->
         <div class="envelope-wrap" id="envelope-wrap">
           <p style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:1.1rem;color:rgba(192,132,252,0.35);text-align:center;">
             Select a letter to open it…
@@ -591,24 +560,6 @@ footer span{color:var(--purple-light);}
 </div>
 
 <script>
-/* ══════════════════════════════════════════════════════
-   ✏️  EDIT YOUR CONTENT HERE
-   
-   FILE STRUCTURE — your folder should look like this:
-     index.html        ← this file
-     images/           ← put ALL your photos here
-       us.jpg          ← hero background photo
-       photo1.jpg
-       photo2.jpg
-       ...
-     videos/           ← put ALL your videos here
-       video1.mp4
-       video2.mp4
-     music/            ← put your music file here
-       song.mp3
-
-══════════════════════════════════════════════════════ */
-
 const SONG = {
   file:   'music/best_part.mp3',
   title:  'Best Part',
@@ -630,6 +581,9 @@ const PHOTOS = [
   { file:'images/photo12.jpg', caption:'Memory 12' },
   { file:'images/photo13.jpg', caption:'Memory 13' },
   { file:'images/photo14.jpg', caption:'Memory 14' },
+  { file:'images/photo15.jpg', caption:'Memory 15' },
+  { file:'images/photo16.jpg', caption:'Memory 16' },
+  { file:'images/photo17.jpg', caption:'Memory 17' },
 ];
 
 const VIDEOS = [
@@ -681,15 +635,28 @@ Because you are my best part loviee and I always say to them that you are my Bes
   },
 ];
 
+// ✏️ REMINDERS — 5 notes for her
 const DEFAULT_REMINDERS = [
-  { tag:'reminder for you loviee',  text:'You are enough, always and forever lovieee.' },
-  { tag:'proud of you loviee',    text:'I\'m so proud of everything you\'ve become.And I am so happy that you have a circle in college lovieee.' },
-  { tag:'always here for you loviee',    text:'On your worst days, remember I love you unconditionally and I am always here for you, no matter what LOVIEEEE.' },
-  { tag:'for you loviee',   text:'You make this world a better place just by being in it you are a blessing to everyone around you.' },
-  { tag:'remember loviee',  text:'You are braver than you believe and stronger than you know and always know that you are amazing and not a burden to anyone lovieee.' },
-  { tag:'Hi loviee', text:'Hey lovieee, just a reminder that you are so loved and appreciated more than you know.' },
-  { tag:'You really deserveee loviee', text:'You really deserve all the love and happiness in the world lovieee also every effort people do to you, you really deserved it lovieee.' },
-  { tag:'keep going loviee', text:'Keep going, even when things get tough. You have the strength to overcome anything that comes your way lovieee.' },
+  {
+    tag: 'we are here for you loviee 💜',
+    text: 'Bea, Ash, and I  we are never going anywhere. You will always have us beside you, no matter what. You are never alone in this, lovieee.'
+  },
+  {
+    tag: 'you are strong loviee 💜',
+    text: 'You are so much stronger than you think. Every hard day you survived, every tear you wiped, every storm you walked through  that is proof of how brave you truly are, lovieee.'
+  },
+  {
+    tag: 'always here for you loviee 💜',
+    text: 'I am always here to make you happy, lovieee. On your quiet days and your hard nights, I will show up for you  because your smile means everything to me.'
+  },
+  {
+    tag: 'you are loved by God loviee 💜',
+    text: 'God loves you with a love that has no end and no condition, lovieee. Even on the days you feel forgotten, He sees you, He holds you, and He never lets go.'
+  },
+  {
+    tag: 'a little extra reminder loviee 💜',
+    text: 'You deserve every good thing coming your way, lovieee. Every effort, every kind word, every beautiful moment  you earned it all just by being the wonderful person that you are.'
+  },
 ];
 
 const ANNIVERSARIES = [
@@ -709,7 +676,6 @@ const ANNIVERSARIES = [
     btn.classList.toggle('open');
     links.classList.toggle('open');
   });
-  // Close menu when a nav button is tapped
   links.querySelectorAll('.nav-btn').forEach(function(b){
     b.addEventListener('click', function(){
       btn.classList.remove('open');
@@ -869,7 +835,6 @@ function navTo(id){
   VIDEOS.forEach(function(v){
     var slot=document.createElement('div');slot.className='video-slot';
     slot.innerHTML='<video src="'+v.file+'" controls playsinline></video><div class="video-info"><span class="video-title">'+v.title+'</span></div>';
-    // Show placeholder if video fails
     var vid=slot.querySelector('video');
     vid.onerror=function(){
       slot.innerHTML='<div class="video-placeholder-box"><span style="font-size:2rem">🎬</span><span style="font-size:0.72rem;text-align:center;">'+v.file+'<br>not found</span></div><div class="video-info"><span class="video-title">'+v.title+'</span></div>';
@@ -878,7 +843,7 @@ function navTo(id){
   });
 })();
 
-// LETTERS — envelope open animation + modal popup
+// LETTERS
 (function(){
   var list=document.getElementById('letters-list');
   var wrap=document.getElementById('envelope-wrap');
@@ -891,7 +856,6 @@ function navTo(id){
   var currentEnv=null;
   var currentLetter=null;
 
-  // Modal open/close
   function openModal(l){
     modalBody.innerHTML=
       '<div class="env-letter-date">'+(l.date||'')+'</div>'+
@@ -905,13 +869,10 @@ function navTo(id){
   function closeModal(){
     modal.classList.remove('open');
     document.body.style.overflow='';
-    // Close the envelope flap animation
     if(currentEnv) currentEnv.classList.remove('open');
   }
   modalClose.onclick=closeModal;
-  // Close on backdrop click
   modal.addEventListener('click',function(e){if(e.target===modal)closeModal();});
-  // Close on Escape
   document.addEventListener('keydown',function(e){if(e.key==='Escape'&&modal.classList.contains('open'))closeModal();});
 
   function buildEnvelope(l){
@@ -946,19 +907,15 @@ function navTo(id){
     wrap.appendChild(env);
     currentEnv=env;
 
-    // Tap envelope → flip flap then open modal
     env.addEventListener('click',function(){
       if(env.classList.contains('open')){
-        // already open: re-open modal
         openModal(l);
         return;
       }
       env.classList.add('open');
-      // After flap animation completes, show modal
       setTimeout(function(){openModal(l);},650);
     });
 
-    // Animate envelope in
     env.style.opacity='0';env.style.transform='translateY(18px)';
     requestAnimationFrame(function(){
       env.style.transition='opacity 0.4s,transform 0.4s';
@@ -977,7 +934,6 @@ function navTo(id){
     list.appendChild(item);
   });
 
-  // Show first letter by default
   list.querySelectorAll('.letter-thumb')[0].click();
 })();
 
@@ -1013,12 +969,10 @@ function navTo(id){
   });
 })();
 
-// STICKY NOTE WALL — hardcoded reminders, read-only
+// STICKY NOTE WALL
 (function(){
   var wall=document.getElementById('sticky-wall');
-  var COLORS=[
-    '#f7d6ff','#ffd6f3','#d6e8ff','#d6ffed','#fff9d6','#ffd6d6','#ead6ff',
-  ];
+  var COLORS=['#f7d6ff','#ffd6f3','#d6e8ff','#d6ffed','#fff9d6'];
   function makeNote(n,i){
     var el=document.createElement('div');el.className='sticky-note';
     el.style.background=COLORS[i%COLORS.length];
@@ -1085,7 +1039,6 @@ function navTo(id){
   var canvas=document.getElementById('flappy-canvas');
   var ctx=canvas.getContext('2d');
   var scoreDisplay=document.getElementById('game-score-display');
-  // Responsive canvas size
   var maxW=Math.min(360,window.innerWidth-32);
   var scale=maxW/360;
   var W=360,H=500;
