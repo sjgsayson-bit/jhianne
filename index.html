@@ -21,7 +21,6 @@ body{background:var(--purple-deep);color:var(--white);font-family:'Montserrat',s
 ::-webkit-scrollbar-track{background:var(--purple-deep);}
 ::-webkit-scrollbar-thumb{background:var(--purple-accent);border-radius:3px;}
 
-/* ══ NAV ══ */
 nav{
   position:fixed;top:0;left:0;right:0;z-index:1000;
   display:flex;align-items:center;justify-content:space-between;
@@ -65,7 +64,6 @@ nav{
   .nav-btn{width:100%;text-align:left;padding:0.75rem 1.5rem;border-radius:0;font-size:0.78rem;}
 }
 
-/* ══ SECTIONS ══ */
 section{min-height:100vh;padding:80px 1.2rem 4rem;}
 .section-inner{max-width:1100px;margin:0 auto;}
 .section-title{
@@ -79,7 +77,6 @@ section{min-height:100vh;padding:80px 1.2rem 4rem;}
   text-transform:uppercase;color:var(--purple-light);opacity:0.6;margin-bottom:2.5rem;
 }
 
-/* ══ HERO ══ */
 #home{
   position:relative;display:flex;flex-direction:column;
   align-items:center;justify-content:center;
@@ -125,7 +122,6 @@ section{min-height:100vh;padding:80px 1.2rem 4rem;}
 .fade-in{opacity:0;transform:translateY(20px);transition:opacity 0.7s ease,transform 0.7s ease;}
 .fade-in.visible{opacity:1;transform:translateY(0);}
 
-/* ══ GALAXY ══ */
 #galaxy-wrap{
   position:relative;width:100%;max-width:680px;margin:0 auto;
   height:min(420px,70vw);background:#000010;border-radius:16px;overflow:hidden;
@@ -142,7 +138,6 @@ section{min-height:100vh;padding:80px 1.2rem 4rem;}
 }
 #galaxy-hint{text-align:center;font-size:0.7rem;color:rgba(192,132,252,0.45);margin-top:0.8rem;letter-spacing:0.1em;}
 
-/* ══ GALLERY ══ */
 #gallery{background:linear-gradient(180deg,var(--purple-deep),#100320);}
 .gallery-grid{
   display:grid;
@@ -160,7 +155,6 @@ section{min-height:100vh;padding:80px 1.2rem 4rem;}
 #lightbox img{max-width:90vw;max-height:85vh;border-radius:10px;border:1px solid var(--glass-border);}
 #lightbox-close{position:absolute;top:1.5rem;right:1.5rem;background:var(--glass);border:1px solid var(--glass-border);color:var(--purple-pale);font-size:1.2rem;width:38px;height:38px;border-radius:50%;cursor:pointer;display:flex;align-items:center;justify-content:center;}
 
-/* ══ VIDEOS ══ */
 #videos{background:linear-gradient(180deg,#100320,var(--purple-deep));}
 .video-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(280px,100%),1fr));gap:1.5rem;}
 .video-slot{border-radius:14px;overflow:hidden;border:1px solid var(--glass-border);background:var(--glass);}
@@ -169,7 +163,6 @@ section{min-height:100vh;padding:80px 1.2rem 4rem;}
 .video-title{font-size:0.82rem;color:var(--purple-pale);letter-spacing:0.05em;}
 .video-placeholder-box{width:100%;aspect-ratio:16/9;background:linear-gradient(135deg,rgba(61,26,110,0.4),rgba(123,63,160,0.2));display:flex;align-items:center;justify-content:center;flex-direction:column;gap:0.5rem;color:rgba(192,132,252,0.4);font-size:0.78rem;}
 
-/* ══ LETTERS ══ */
 #letters{background:linear-gradient(180deg,var(--purple-deep),#120420);}
 .letters-layout{display:grid;grid-template-columns:1fr 1.4fr;gap:2rem;}
 @media(max-width:700px){.letters-layout{grid-template-columns:1fr;}}
@@ -185,7 +178,6 @@ section{min-height:100vh;padding:80px 1.2rem 4rem;}
 .letter-display::-webkit-scrollbar-thumb{background:rgba(192,132,252,0.3);border-radius:2px;}
 .letter-display-date{font-size:0.68rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--purple-light);margin-bottom:1.2rem;font-style:normal;font-family:'Montserrat',sans-serif;}
 
-/* ── ENVELOPE ── */
 .envelope-wrap{position:relative;width:100%;display:flex;align-items:center;justify-content:center;min-height:380px;}
 .envelope{
   position:relative;width:100%;max-width:420px;
@@ -232,7 +224,6 @@ section{min-height:100vh;padding:80px 1.2rem 4rem;}
 .env-hint{text-align:center;font-size:0.68rem;letter-spacing:0.15em;text-transform:uppercase;color:rgba(192,132,252,0.4);margin-top:1rem;transition:opacity 0.3s;}
 .envelope.open .env-hint{opacity:0;}
 
-/* ══ LETTER MODAL OVERLAY ══ */
 #letter-modal{
   display:none;
   position:fixed;inset:0;z-index:3000;
@@ -297,7 +288,6 @@ section{min-height:100vh;padding:80px 1.2rem 4rem;}
   .env-letter-body{font-size:1rem;}
 }
 
-/* ══ SONG ══ */
 #song{background:linear-gradient(180deg,#120420,var(--purple-deep));}
 .song-player{max-width:480px;margin:0 auto;background:var(--glass);border:1px solid var(--glass-border);border-radius:20px;padding:2.5rem 1.5rem;text-align:center;}
 .song-vinyl{width:140px;height:140px;margin:0 auto 1.8rem;position:relative;}
@@ -316,7 +306,6 @@ section{min-height:100vh;padding:80px 1.2rem 4rem;}
 .ctrl-play:hover{box-shadow:0 0 35px rgba(168,85,247,0.6);transform:scale(1.05);}
 #song-error{font-size:0.78rem;color:rgba(192,132,252,0.5);margin-top:1rem;display:none;font-style:italic;}
 
-/* ══ STICKY NOTE WALL ══ */
 #book{background:linear-gradient(180deg,var(--purple-deep),#0e0320);}
 .sticky-wall{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(200px,42vw),1fr));gap:1.5rem;padding:0.5rem 0.3rem 2rem;min-height:180px;}
 .sticky-note{position:relative;padding:1.2rem 1.2rem 1.8rem;border-radius:4px 4px 4px 0;box-shadow:4px 6px 18px rgba(0,0,0,0.42),inset -2px -2px 0 rgba(255,255,255,0.1);font-family:'Montserrat',sans-serif;color:#3a1a5e;word-break:break-word;transition:transform 0.3s,box-shadow 0.3s;animation:noteappear 0.4s cubic-bezier(0.175,0.885,0.32,1.275) both;}
@@ -332,7 +321,6 @@ section{min-height:100vh;padding:80px 1.2rem 4rem;}
 .sticky-empty{grid-column:1/-1;text-align:center;padding:3rem;font-family:'Cormorant Garamond',serif;font-size:1.15rem;font-style:italic;color:rgba(192,132,252,0.3);}
 @keyframes noteappear{from{opacity:0;transform:scale(0.6) rotate(-6deg);}to{opacity:1;}}
 
-/* ══ CALENDAR ══ */
 #calendar{background:linear-gradient(180deg,#0e0320,var(--purple-deep));}
 .cal-layout{display:grid;grid-template-columns:1fr 1.2fr;gap:2rem;align-items:start;}
 @media(max-width:720px){.cal-layout{grid-template-columns:1fr;}}
@@ -355,21 +343,18 @@ section{min-height:100vh;padding:80px 1.2rem 4rem;}
 .anniv-date{font-size:0.68rem;letter-spacing:0.09em;color:var(--purple-light);opacity:0.65;}
 .anniv-countdown{font-size:0.68rem;color:var(--gold);margin-top:0.15rem;}
 
-/* ══ GAME ══ */
 #game{background:linear-gradient(180deg,var(--purple-deep),#080115);}
 .game-wrap{max-width:380px;margin:0 auto;display:flex;flex-direction:column;align-items:center;gap:1rem;width:100%;}
 #flappy-canvas{border-radius:14px;border:1px solid var(--glass-border);box-shadow:0 0 40px rgba(120,60,180,0.3);display:block;max-width:100%;}
 .game-score-display{font-family:'Cormorant Garamond',serif;font-size:1.4rem;font-style:italic;color:var(--purple-pale);}
 .game-instruction{font-size:0.7rem;letter-spacing:0.12em;color:rgba(192,132,252,0.45);}
 
-/* ══ FOOTER ══ */
 footer{text-align:center;padding:2.5rem 1rem;background:#060010;border-top:1px solid var(--glass-border);font-size:0.7rem;letter-spacing:0.15em;color:rgba(192,132,252,0.3);}
 footer span{color:var(--purple-light);}
 </style>
 </head>
 <body>
 
-<!-- LETTER MODAL -->
 <div id="letter-modal" role="dialog" aria-modal="true">
   <div class="letter-modal-card">
     <div class="letter-modal-header">
@@ -380,7 +365,6 @@ footer span{color:var(--purple-light);}
   </div>
 </div>
 
-<!-- NAV -->
 <nav>
   <div class="nav-logo">For You 💜</div>
   <button class="nav-hamburger" id="nav-hamburger" aria-label="Menu">
@@ -399,7 +383,6 @@ footer span{color:var(--purple-light);}
   </ul>
 </nav>
 
-<!-- HERO -->
 <section id="home">
   <div id="hero-photo"></div>
   <div id="hero-overlay-bottom"></div>
@@ -433,7 +416,6 @@ footer span{color:var(--purple-light);}
   </div>
 </section>
 
-<!-- GALAXY -->
 <section id="galaxy-section" style="min-height:auto;padding:5rem 1.2rem;">
   <div class="section-inner">
     <h2 class="section-title fade-in">Our Universe</h2>
@@ -446,7 +428,6 @@ footer span{color:var(--purple-light);}
   </div>
 </section>
 
-<!-- GALLERY -->
 <section id="gallery">
   <div class="section-inner">
     <h2 class="section-title fade-in">Our Gallery</h2>
@@ -455,7 +436,6 @@ footer span{color:var(--purple-light);}
   </div>
 </section>
 
-<!-- VIDEOS -->
 <section id="videos">
   <div class="section-inner">
     <h2 class="section-title fade-in">Our Videos</h2>
@@ -464,7 +444,6 @@ footer span{color:var(--purple-light);}
   </div>
 </section>
 
-<!-- LETTERS -->
 <section id="letters">
   <div class="section-inner">
     <h2 class="section-title fade-in">Letters to You</h2>
@@ -484,7 +463,6 @@ footer span{color:var(--purple-light);}
   </div>
 </section>
 
-<!-- SONG -->
 <section id="song">
   <div class="section-inner">
     <h2 class="section-title fade-in">Our Song</h2>
@@ -510,7 +488,6 @@ footer span{color:var(--purple-light);}
   </div>
 </section>
 
-<!-- REMINDERS FOR YOU -->
 <section id="book">
   <div class="section-inner">
     <h2 class="section-title fade-in">Reminders for You</h2>
@@ -519,7 +496,6 @@ footer span{color:var(--purple-light);}
   </div>
 </section>
 
-<!-- CALENDAR -->
 <section id="calendar">
   <div class="section-inner">
     <h2 class="section-title fade-in">Our Timeline</h2>
@@ -539,7 +515,6 @@ footer span{color:var(--purple-light);}
   </div>
 </section>
 
-<!-- GAME -->
 <section id="game">
   <div class="section-inner">
     <h2 class="section-title fade-in">Mini Game</h2>
@@ -560,6 +535,10 @@ footer span{color:var(--purple-light);}
 </div>
 
 <script>
+/* ══════════════════════════════════════════════════════
+   ✏️ EDIT THIS SECTION — your content goes here
+═════════════════════════════════════════════════════ */
+
 const SONG = {
   file:   'music/best_part.mp3',
   title:  'Best Part',
@@ -591,9 +570,13 @@ const VIDEOS = [
   { file:'videos/video2.mp4', title:'Our Video 2' },
 ];
 
+// ✏️ LETTERS — add a `sign` field to each letter to customize the sign-off.
+// If you leave out `sign`, it defaults to "With love 💜"
 const LETTERS = [
   {
-    title:'Surprise, Lovieee 💜', date:'A letter just for you',
+    title:'Surprise, Lovieee 💜',
+    date:'A letter just for you',
+    sign:'Your Computer Engineer Saisai 💛',
     body:`Hi lovieee, hehe surprise . Welcome to your personal website. 
 
 First of all, I want you to know that I made this for you because you are someone very special to me. I wanted to create a place where I can keep our memories together a place where I can store my messages for you, our pictures, reminders, and all the little things that make me think of you.I made this website because you deserve it, lovieee. You deserve to have something that reminds you how loved, appreciated, and important you are. This website will always be updated because I have all the code. I can change the pictures, add new photos, upload videos, change the music, and write new messages for you whenever I want. It's like a little corner of the internet made especially for you.
@@ -619,7 +602,21 @@ Thank you for every memory, every conversation, every laugh, every moment, and e
 I love you so much, lovieee. More than these words can explain.`,
   },
   {
-    title:'Why "Best Part" 🎵', date:'A note about our song',
+    title:'A Letter from Ash 🩷',
+    date:'With love and gratitude',
+    sign:'Always yours, Ash 🩷',
+    body:`to my human diary, thank you for always being there not just for me but also to everyone who needs your presence. thank you for your life and existence. thank you for your effort, time and kindness that you have given us. you are one of a kind yann! thank you for the friendship that we have. i will always treasure our memories and bonds together. i will never forget how happy i am for just being with you and sai, my heart is always full when we laag together hehe. i will always understand you no matter what yannn, because you deserve to be understood. you have a genuine heart that needs to be protected, you are rare and unique. you're like a diamond that needs to be treasured. i am always here when you need someone to listen to your life stories and chikas. i will never get tired listening to you, even if its a one week chikabels HAHAHAHA.  may God bless you always, thank you for having a genuine heart that not everyone have it. no matter where life takes us, i will always return for what our friendship have. please always remember that me, sai and bea are always here for you. you can always share your problems with us, we are here to guide and support you. think positive as always, don't pressure yourself, every problems has a solution, everything happens for a reason, keep moving forward, don't give up, everything will be worth it in God's will. please always find light in your room that full of darkness. we are always here for you, jhianne! we love youuuu!!!`,
+  },
+  {
+    title:'A Promise to You 💜',
+    date:'Always and forever',
+    sign:'always here for you Saisai 💛',
+    body:`HI Lovieee saisai here againnnn in your website , I want you to always remember this, no matter how many people fail to understand you, no matter how many times people misinterpret your actions, your feelings, your silence, or the way you cope with things, I will always be here trying to understand you because you are someone worth understanding, you never have to carry the burden of explaining yourself alone because I will always be willing to listen to your side, listen to your heart, and listen to the things you struggle to put into words, I know there will be days when you feel like nobody truly gets what you're going through, days when you feel alone in your thoughts, days when your heart feels heavy from carrying so much, but please lovieee never forget that you have me, you will always have me, I am not here only when you are smiling, when things are easy, or when life is going well, I am here for the days when you feel lost, for the nights when your mind won't stop overthinking, for the moments when you feel like giving up, and for the times when you need someone to remind you that you are stronger than you think, I want you to know that my friendship with you is not temporary and it is not based on convenience, I don't stay because life is easy, I stay because you matter to me, I stay because you became one of the most important people in my life, I stay because having you in my life is one of the greatest blessings God has ever given me, lovieee there are so many things I am thankful for when it comes to you, I am thankful for your existence, for your genuine heart, for your kindness, for your trust, for every memory we created together, and for every moment that allowed me to know the beautiful person that you are, sometimes I wish you could see yourself through my eyes because maybe then you would finally understand how special you really are, maybe then you would realize how loved you are, how appreciated you are, and how much of an impact you have on the people around you, you have such a beautiful soul lovieee and even when you don't see your own worth, I will continue reminding you of it, even when you feel like nobody notices your efforts, I notice them, even when you feel like nobody cares, I care, even when you feel like nobody understands, I will do my best to understand, I promise you that I am not going anywhere, no matter how busy life gets, no matter how many challenges come our way, no matter how many changes happen around us, I will continue choosing our friendship because you are someone I never want to lose, I know how painful it feels when people suddenly become distant, when people leave without explanation, when people make you feel like you're easy to replace, and that is why I never want you to experience that from me, I never want you to sit there wondering if you did something wrong, I never want you to overthink whether I still care about you because I do and I always will, I promise you lovieee, I will never give you the silent treatment, never po, if something is wrong, I will communicate, if life gets overwhelming, I will still come back, if there is a problem, I will choose to talk about it instead of making you feel abandoned, you mean far too much to me for me to ever make you question your worth in my life, I want our friendship to always be a safe place, a place where you can be completely yourself without fear of being judged, a place where you can cry, laugh, vent, overthink, and simply exist knowing that someone cares, and if one day life becomes too heavy and you feel like the world is against you, I hope you remember these words, remember that there is someone out here who is endlessly grateful that you exist, someone who is proud of you even when you don't feel proud of yourself, someone who believes in you even when you struggle to believe in yourself, and someone who will continue to stay beside you through every chapter of your life, you are loved more than you know, appreciated more than you realize, and cherished more than words can ever explain, thank you for being my best friend, thank you for trusting me with your heart, and thank you for allowing me to be part of your life, as long as I am here lovieee, you will never have to face anything alone because I will always choose you, I will always care for you, and I will always be here for you no matter what happens I LOVE YOU SO MUCH LOVIEEE💜💐🫂`,
+  },
+  {
+    title:'Why "Best Part" 🎵',
+    date:'A note about our song',
+    sign:'Your Saisai 💜',
     body:`lovieee, there is one more thing I want you to know about the music. The song I chose for this website is "Best Part" by Daniel Caesar, and I didn't choose  it randomly. I chose that song because every time I hear it, it reminds me of you po and it our favorite song together and I chose it because, to me, you are the best part.
 
 You are one of the best things that has ever come into my life po loviee . Out of all the people I have met, all the experiences I have had, and all the memories I have made, meeting you will always be something I am grateful for.You came into my life during a time when I didn't even realize how much I needed someone like you. And ever since then, you have become someone I cherish deeply. Your presence, your kindness, your smile, your personality, and even the little things you don't notice about yourself have become things that I appreciate more than I can explain.That's why I chose that song.Because whenever it plays, it reminds me of how lucky I am that our paths crossed.It reminds me that I was given the chance to know someone who means so much to me.It reminds me that no matter what happens, there was a person who made my days brighter just by existing.
@@ -630,65 +627,55 @@ If someone asked me what is your fav song "Best Part," my answer would be simple
 Because you are my best part loviee and I always say to them that you are my Best part loviee Not because you are perfect, but because you are you.And there has never been a day where I regretted meeting you.Instead, there are countless days where I silently thank God and the universe for allowing me to know someone as wonderful as you.So whenever you hear that song playing on this website, I hope you remember why it's there.It's there because every time I listen to it, I am reminded of the person who became one of the most beautiful parts of my life.And that person is you, lovieee i love you`,
   },
   {
-    title:'A Reminder of How Loved You Are 💜', date:'When you need to hear it most',
+    title:'A Reminder of How Loved You Are 💜',
+    date:'When you need to hear it most',
+    sign:'Always here for you, Saisai 💜',
     body:`Hi lovieee, I just want to remind you of something very important, lovieee. No matter what happens, no matter how difficult life gets, and no matter how alone you may sometimes feel, please always remember that I am always here for you, lovieee. Not just today, not just when things are easy, but every single day. Through your happiest moments, your hardest battles, your silent struggles, and even the days when you don't have the strength to talk to anyone, I will still be here for you, lovieee. I know you've shared with us some of the things that happened with your friends, and hearing those things made me realize how much you've been carrying in your heart, lovieee. Sometimes you smile, laugh, and act like everything is okay, but I know there are moments when you're hurting more than people realize, and I just want you to know that you never have to carry that pain alone, lovieee. Please don't ever think that your feelings are too much for us or that you're a burden when you're struggling. Please don't think that you have to hide your tears just because you don't want to worry anyone. You are important to us, lovieee. Your feelings matter, your pain matters, and your heart matters. You spend so much of your time caring for other people, listening when they need someone, comforting them when they're hurting, and making them feel loved and valued, but sometimes I wonder if you realize that you deserve that same kind of love and care too, lovieee, because you do. You deserve friends who stay, lovieee. You deserve people who choose you, understand you, support you, and remind you every day that you matter. You deserve friendships that feel safe, genuine, and comforting, lovieee. I know there may be times when people disappoint you, leave, change, or make you feel forgotten, and there may be moments when you wonder why some people couldn't see your worth, but please don't let those moments convince you that you are hard to love because that is far from the truth, lovieee. The truth is that you are one of the easiest people to love. Your kindness is easy to love, lovieee. Your heart is easy to love. Your patience is easy to love. Your smile is easy to love. The way you care so deeply for others is something truly special, lovieee. Sometimes I wish you could see yourself through the eyes of the people who genuinely care about you because then you would finally understand how amazing you are, lovieee. You would see how much light you bring into people's lives, how many people smile because of you, and how much your presence means to those around you. I don't think you realize how many people are grateful that you're here, lovieee. You may think you're just listening when someone talks about their problems, but your listening is a form of love, lovieee. You may think you're just checking up on people, but that's a form of love too. You may think you're just being yourself, but your kindness changes people's lives more than you know. You've helped so many people simply by being there, lovieee, and now I want you to remember that you don't always have to be the strong one. You don't always have to be the listener. You don't always have to carry everything on your own, lovieee. You deserve to be listened to. You deserve to be comforted. You deserve to be understood. You deserve to be cared for too, lovieee. And if there comes a day when everything feels too heavy, when your heart feels tired, when your mind is full of worries, or when you feel like shutting everyone out, please remember that you don't have to go through it alone because I am here, lovieee, and we are here. If you need someone to listen, I am here. If you need someone to sit quietly with you, I am here. If you need someone to remind you of your worth, I am here. If you need someone to believe in you when you can't believe in yourself, I am here, lovieee. Even on the days when you don't reply, even on the days when you push people away, even on the days when you feel broken, I will still be here. I will never force you to open up before you're ready because I know healing takes time, trust takes time, and some wounds are difficult to talk about, lovieee. So take all the time you need. Whenever you're ready, I'll be here to listen. And if you're not ready, that's okay too, lovieee. Just know that you don't have to earn our love, prove your worth, or be perfect for us to care about you. We love you because you're you, lovieee. Not because of what you do for us, not because of how strong you are, and not because of how much you help others, but simply because you're you. Thank you for existing, lovieee. Thank you for every smile you've shared, every time you've been there for someone, every kind word you've given, and every effort you've made to make others feel loved. Thank you for staying even when life has been difficult, lovieee. And if nobody has told you this recently, I am so proud of you. I'm proud of you for surviving the days you thought you couldn't get through. I'm proud of you for continuing to move forward when things felt impossible. I'm proud of you for remaining kind despite everything you've experienced, lovieee. Please never forget that you are deeply loved, appreciated, valued, and cherished. There are people who care about you more than you know, lovieee. There are people who are thankful that you're in their lives, and there are people who would gladly stay by your side through every storm. No matter what happens in life, no matter where life takes us, and no matter how many challenges come your way, you will always have a place in my heart, lovieee. You will always have someone who cares, someone who is willing to listen, someone who is willing to stay, and someone who will choose you again and again. I love you so much, lovieee, and I hope you never forget how loved you truly are because you deserve all the love, care, patience, understanding, and happiness in the world. And whenever you feel like nobody understands you, please remember this message, lovieee. Remember that there are people who love you, people who appreciate you, people who are proud of you, and people who are grateful that you exist. You are never alone, lovieee, and as long as I am here, you will always have someone beside you. I love you so much, lovieee so much you have me always okieeeeee💜💜💜`,
   },
 ];
 
-// ✏️ REMINDERS — 5 notes for her
 const DEFAULT_REMINDERS = [
   {
-    tag: 'we are here for you loviee 💜',
-    text: 'Bea, Ash, and I  we are never going anywhere. You will always have us beside you, no matter what. You are never alone in this, lovieee.'
+    tag: 'its okay to cry loviee 💜',
+    text: 'It\'s okay to cry. It\'s okay to break. It\'s okay to feel everything all at once. You don\'t have to hold it all together, lovieee. Not with me. Always know that I am here. I will hold you when you can\'t hold yourself. I will listen to every tear, every pain, every struggle without judgment. You are allowed to fall apart, lovieee, because I will always be here to help you put yourself back together.'
   },
   {
-    tag: 'you are strong loviee 💜',
-    text: 'You are so much stronger than you think. Every hard day you survived, every tear you wiped, every storm you walked through  that is proof of how brave you truly are, lovieee.'
+    tag: 'the girl you used to be 💜',
+    text: 'The little girl you once were just wanted to be loved, to feel safe, and to belong. I hope she knows she found it. I hope she knows that all the pain she went through was not the end of her story. She made it. You made it, lovieee.'
   },
   {
-    tag: 'always here for you loviee 💜',
-    text: 'I am always here to make you happy, lovieee. On your quiet days and your hard nights, I will show up for you  because your smile means everything to me.'
+    tag: 'what you never hear enough 💜',
+    text: 'Nobody tells you this enough so I will. Thank you for staying. Thank you for choosing to wake up every day even on the days when everything felt pointless. The world is genuinely better because you are still here in it, lovieee. Please never forget that.'
   },
   {
-    tag: 'you are loved by God loviee 💜',
-    text: 'God loves you with a love that has no end and no condition, lovieee. Even on the days you feel forgotten, He sees you, He holds you, and He never lets go.'
+    tag: 'the love you keep giving 💜',
+    text: 'You have loved people who didn\'t love you back the way you deserved. You gave pieces of yourself to people who never even noticed. But that love was never wasted, lovieee. It only proved how beautifully and deeply your heart is capable of loving. Someone will cherish that one day. Someone already does.'
   },
   {
-    tag: 'a little extra reminder loviee 💜',
-    text: 'You deserve every good thing coming your way, lovieee. Every effort, every kind word, every beautiful moment  you earned it all just by being the wonderful person that you are.'
+    tag: 'if nobody said it today 💜',
+    text: 'I am so glad you exist. Not because of what you do, not because of how strong you are, not because of how much you give. Just because you are you. The world needed exactly you, lovieee, and it still does. Today and every day after.'
   },
 ];
 
 const ANNIVERSARIES = [
   { name:'Friendship Anniversary 💜', date:'2024-09-01' },
-  { name:'Yannie\'s Birthday 🎂',           date:'2007-03-04' },
+  { name:'Yannie\'s Birthday 🎂',     date:'2007-03-04' },
 ];
 
 /* ══════════════════════════════════════════════════════
    🚫 DON'T EDIT BELOW THIS LINE
 ═════════════════════════════════════════════════════ */
 
-// HAMBURGER MENU
 (function(){
-  var btn = document.getElementById('nav-hamburger');
-  var links = document.getElementById('nav-links');
-  btn.addEventListener('click', function(){
-    btn.classList.toggle('open');
-    links.classList.toggle('open');
-  });
+  var btn=document.getElementById('nav-hamburger');
+  var links=document.getElementById('nav-links');
+  btn.addEventListener('click',function(){btn.classList.toggle('open');links.classList.toggle('open');});
   links.querySelectorAll('.nav-btn').forEach(function(b){
-    b.addEventListener('click', function(){
-      btn.classList.remove('open');
-      links.classList.remove('open');
-    });
+    b.addEventListener('click',function(){btn.classList.remove('open');links.classList.remove('open');});
   });
 })();
 
-// NAV SCROLL HIGHLIGHT
-function navTo(id){
-  var el=document.getElementById(id);
-  if(el) el.scrollIntoView({behavior:'smooth'});
-}
+function navTo(id){var el=document.getElementById(id);if(el)el.scrollIntoView({behavior:'smooth'});}
 (function(){
   var ids=['home','galaxy-section','gallery','videos','letters','song','book','calendar','game'];
   window.addEventListener('scroll',function(){
@@ -701,24 +688,23 @@ function navTo(id){
   });
 })();
 
-// STARS
 (function(){
   var sf=document.getElementById('star-field');
   for(var i=0;i<80;i++){
-    var d=document.createElement('div'); d.className='star-dot';
+    var d=document.createElement('div');d.className='star-dot';
     var sz=Math.random()*2+0.4;
     d.style.cssText='width:'+sz+'px;height:'+sz+'px;left:'+Math.random()*100+'%;top:'+Math.random()*100+'%;--d:'+(2+Math.random()*4).toFixed(1)+'s;--mo:'+(0.3+Math.random()*0.7).toFixed(2)+';animation-delay:'+(Math.random()*5).toFixed(1)+'s;';
     sf.appendChild(d);
   }
 })();
 
-// GALAXY
 (function(){
-  var canvas=document.getElementById('gc'); if(!canvas)return;
+  var canvas=document.getElementById('gc');if(!canvas)return;
   var ctx=canvas.getContext('2d');
+  if(!ctx)return;
   var wrap=document.getElementById('galaxy-wrap');
   var W=wrap.clientWidth,H=wrap.clientHeight;
-  canvas.width=W; canvas.height=H;
+  canvas.width=W;canvas.height=H;
   var cx=W/2,cy=H/2;
   var msg=document.getElementById('galaxy-msg');
   var rotX=0,rotY=0,velX=0,velY=0,t=0,msgShown=false,dragging=false,lastX=0,lastY=0;
@@ -760,20 +746,20 @@ function navTo(id){
   function draw(){
     ctx.clearRect(0,0,W,H);ctx.fillStyle='#000010';ctx.fillRect(0,0,W,H);
     var g1=ctx.createRadialGradient(cx,cy,0,cx,cy,220);
-    g1.addColorStop(0,'rgba(160,120,255,0.16)');g1.addColorStop(0.35,'rgba(80,50,170,0.09)');
-    g1.addColorStop(0.7,'rgba(20,10,60,0.05)');g1.addColorStop(1,'rgba(0,0,0,0)');
+    g1.addColorStop(0,'rgba(180,140,255,0.25)');g1.addColorStop(0.35,'rgba(100,70,190,0.15)');
+    g1.addColorStop(0.7,'rgba(40,20,100,0.08)');g1.addColorStop(1,'rgba(0,0,0,0)');
     ctx.fillStyle=g1;ctx.fillRect(0,0,W,H);
     for(var s of stars){s.baseAngle+=s.speed;s.x3=s.baseRadius*Math.cos(s.baseAngle);s.y3=s.flatY;}
     var projected=stars.map(function(s,i){var p=project(s.x3,s.y3,s.z3);return Object.assign({},s,p,{i:i});});
     projected.sort(function(a,b){return a.depth-b.depth;});
     for(var p of projected){
       if(p.sx<-12||p.sx>W+12||p.sy<-12||p.sy>H+12)continue;
-      var tw=twinkle(p.i,t),sz2=p.sz*(0.65+p.sc*0.35)*tw,alpha=p.br*Math.min(1,(p.sc+0.2)*0.85)*tw;
+      var tw=twinkle(p.i,t),sz2=p.sz*(0.65+p.sc*0.35)*tw,alpha=Math.min(1,p.br*Math.min(1.2,(p.sc+0.2)*0.95)*tw);
       if(sz2<0.2)continue;
       if(sz2>1.1){
         var gl=ctx.createRadialGradient(p.sx,p.sy,0,p.sx,p.sy,sz2*4);
-        gl.addColorStop(0,'rgba('+p.r+','+p.g+','+p.b+','+alpha+')');
-        gl.addColorStop(0.3,'rgba('+p.r+','+p.g+','+p.b+','+(alpha*0.35)+')');
+        gl.addColorStop(0,'rgba('+p.r+','+p.g+','+p.b+','+Math.min(1,alpha*1.3)+')');
+        gl.addColorStop(0.3,'rgba('+p.r+','+p.g+','+p.b+','+(alpha*0.5)+')');
         gl.addColorStop(1,'rgba('+p.r+','+p.g+','+p.b+',0)');
         ctx.beginPath();ctx.arc(p.sx,p.sy,sz2*4,0,Math.PI*2);ctx.fillStyle=gl;ctx.fill();
       }
@@ -807,7 +793,6 @@ function navTo(id){
   loop();
 })();
 
-// GALLERY
 (function(){
   var grid=document.getElementById('gallery-grid');
   var lb=document.getElementById('lightbox');
@@ -826,7 +811,6 @@ function navTo(id){
   });
 })();
 
-// VIDEOS
 (function(){
   var grid=document.getElementById('video-grid');
   if(!VIDEOS.length){
@@ -843,7 +827,6 @@ function navTo(id){
   });
 })();
 
-// LETTERS
 (function(){
   var list=document.getElementById('letters-list');
   var wrap=document.getElementById('envelope-wrap');
@@ -857,11 +840,13 @@ function navTo(id){
   var currentLetter=null;
 
   function openModal(l){
+    // ✅ Uses l.sign if provided, otherwise falls back to "With love 💜"
+    var signOff = l.sign || 'With love 💜';
     modalBody.innerHTML=
       '<div class="env-letter-date">'+(l.date||'')+'</div>'+
       '<div class="env-letter-title">'+l.title+'</div>'+
       '<div class="env-letter-body">'+l.body+'</div>'+
-      '<div class="env-letter-sign">Your Computer Engineer Saisai 💛</div>';
+      '<div class="env-letter-sign">'+signOff+'</div>';
     modalBody.scrollTop=0;
     modal.classList.add('open');
     document.body.style.overflow='hidden';
@@ -869,7 +854,7 @@ function navTo(id){
   function closeModal(){
     modal.classList.remove('open');
     document.body.style.overflow='';
-    if(currentEnv) currentEnv.classList.remove('open');
+    if(currentEnv)currentEnv.classList.remove('open');
   }
   modalClose.onclick=closeModal;
   modal.addEventListener('click',function(e){if(e.target===modal)closeModal();});
@@ -880,7 +865,7 @@ function navTo(id){
     if(currentEnv){
       currentEnv.classList.remove('open');
       setTimeout(function(){showEnvelope(l);},350);
-    } else {
+    }else{
       showEnvelope(l);
     }
   }
@@ -908,10 +893,7 @@ function navTo(id){
     currentEnv=env;
 
     env.addEventListener('click',function(){
-      if(env.classList.contains('open')){
-        openModal(l);
-        return;
-      }
+      if(env.classList.contains('open')){openModal(l);return;}
       env.classList.add('open');
       setTimeout(function(){openModal(l);},650);
     });
@@ -937,7 +919,6 @@ function navTo(id){
   list.querySelectorAll('.letter-thumb')[0].click();
 })();
 
-// SONG
 (function(){
   var audio=document.getElementById('song-audio');
   var playBtn=document.getElementById('btn-play');
@@ -969,7 +950,6 @@ function navTo(id){
   });
 })();
 
-// STICKY NOTE WALL
 (function(){
   var wall=document.getElementById('sticky-wall');
   var COLORS=['#f7d6ff','#ffd6f3','#d6e8ff','#d6ffed','#fff9d6'];
@@ -979,13 +959,10 @@ function navTo(id){
     el.innerHTML=(n.tag?'<div class="sticky-note-tag">'+n.tag+'</div>':'')+'<div class="sticky-note-text">'+n.text+'</div>';
     return el;
   }
-  if(!DEFAULT_REMINDERS.length){
-    wall.innerHTML='<div class="sticky-empty">No notes yet 💜</div>';return;
-  }
+  if(!DEFAULT_REMINDERS.length){wall.innerHTML='<div class="sticky-empty">No notes yet 💜</div>';return;}
   DEFAULT_REMINDERS.forEach(function(n,i){wall.appendChild(makeNote(n,i));});
 })();
 
-// CALENDAR
 (function(){
   var monthLabel=document.getElementById('cal-month-label');
   var daysHeader=document.getElementById('cal-days-header');
@@ -1034,7 +1011,6 @@ function navTo(id){
   renderCal();renderAnniv();
 })();
 
-// FLAPPY BIRD
 (function(){
   var canvas=document.getElementById('flappy-canvas');
   var ctx=canvas.getContext('2d');
@@ -1114,7 +1090,6 @@ function navTo(id){
   init();loop();
 })();
 
-// FADE IN
 (function(){
   var els=document.querySelectorAll('.fade-in');
   var obs=new IntersectionObserver(function(entries){entries.forEach(function(e){if(e.isIntersecting)e.target.classList.add('visible');});},{threshold:0.1});
